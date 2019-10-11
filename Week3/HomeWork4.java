@@ -20,4 +20,4 @@ public class HomeWork4{
 	}
 }
 
-// komentarz testowy dla gita
+// Test gita
