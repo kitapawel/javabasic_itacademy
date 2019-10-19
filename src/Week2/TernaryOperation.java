@@ -1,3 +1,5 @@
+package Week2;
+
 public class TernaryOperation{
 	public static void main(String args[]){
 		boolean condition = true;

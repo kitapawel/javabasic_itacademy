@@ -1,3 +1,5 @@
+package Week3;
+
 import java.util.Arrays;
 public class HomeWork2{
 	public static void main(String[] arg){

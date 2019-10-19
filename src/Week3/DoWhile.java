@@ -1,3 +1,5 @@
+package Week3;
+
 import java.util.Arrays;
 public class DoWhile{
 	public static void main(String[] args){

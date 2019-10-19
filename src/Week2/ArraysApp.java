@@ -1,3 +1,5 @@
+package Week2;
+
 import java.util.Arrays;
 public class ArraysApp{
 	public static void main(String args[]){

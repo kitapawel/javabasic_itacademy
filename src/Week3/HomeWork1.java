@@ -1,3 +1,5 @@
+package Week3;
+
 public class HomeWork1{
 	public static void main(String[] arg){
 		int i = 10;
