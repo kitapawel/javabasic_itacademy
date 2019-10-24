@@ -2,7 +2,7 @@ package Week2;
 
 import java.util.Arrays;
 public class ArraysApp{
-	public static void main(String args[]){
+	public static void main(String[] args){
 		int[][] ints = {{3,4,5,6},{1,2,3,4}};
 		
 		System.out.println(Arrays.toString(ints[0]));

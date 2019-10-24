@@ -2,7 +2,7 @@ package Week1;
 import java.util.Scanner;
 
 public class HomeWork5{
-	public static void main(String args[]){
+	public static void main(String[] args){
 		float floatNumber[] = new float[12];
 		for (int i = 0; i < floatNumber.length; i++) {
 			Scanner scanner = new Scanner(System.in);

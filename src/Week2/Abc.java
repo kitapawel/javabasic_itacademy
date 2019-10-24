@@ -2,7 +2,7 @@ package Week2;
 
 import java.util.Arrays;
 public class Abc{
-	public static void main(String args[]){
+	public static void main(String[] args){
 		if (args.length == 0){
 			System.out.println("No arguments provided");
 		} else {
