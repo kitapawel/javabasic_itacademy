@@ -1,4 +1,4 @@
-package Week5;
+package Week5.animals;
 
 public class PetTester {
     public static void main(String[] args) {
