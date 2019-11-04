@@ -1,6 +1,8 @@
 package Week6.car;
 
-public class Engine {
+import java.util.Objects;
+
+public class Engine implements Cloneable{
 
     private String name;
     private int power;
@@ -26,5 +28,29 @@ public class Engine {
         this.power = power;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Engine engine = (Engine) o;
+
+        return name.equals(engine.name) && power == engine.power; // wrappers compared via equals and primitives (int) compared via ==
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, power);
+    }
+
+    @Override
+    public String toString() {
+        return "Engine " + name;
+    }
+
+    @Override
+    protected Engine clone() throws CloneNotSupportedException{
+       return (Engine) super.clone();
+    }
 
 }

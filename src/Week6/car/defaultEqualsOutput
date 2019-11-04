@@ -1,0 +1,27 @@
+"C:\Program Files\Java\jdk-11.0.4\bin\java.exe" "-javaagent:C:\IntelliJ IDEA Community Edition 2019.2.3\lib\idea_rt.jar=53525:C:\IntelliJ IDEA Community Edition 2019.2.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\kitap\IdeaProjects\javabasic_itacademy\target\production\javabasic_itacademy Week6.car.CarTester
+
+// Output of the CarTester class before overriding Object methods
+
+"C:\Program Files\Java\jdk-11.0.4\bin\java.exe" "-javaagent:C:\IntelliJ IDEA Community Edition 2019.2.3\lib\idea_rt.jar=53547:C:\IntelliJ IDEA Community Edition 2019.2.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\kitap\IdeaProjects\javabasic_itacademy\target\production\javabasic_itacademy Week6.car.CarTester
+Maluch's 30 horsepower engine says VROOOOM!
+Maluch has been tanked.
+Duży Fiat's 50 horsepower engine says VROOOOM!
+Maluch has been tanked.
+Duży Fiat's 50 horsepower engine says VROOOOM!
+Maluch has been tanked.
+Tesla's 470 horsepower engine says WHIZZZZ!
+Tesla has been charged.
+Chevrolet Volt's 84 horsepower engine says WHOOSHWROOOM!
+Chevrolet Volt has been charged.
+Chevrolet Volt has been tanked.
+class Week6.car.ElectricCar
+class Week6.car.Hybrid
+class Week6.car.FuelCar
+Week6.car.FuelCar@54a097cc not equals Week6.car.FuelCar@36f6e879
+Week6.car.FuelCar@36f6e879 equals Week6.car.FuelCar@36f6e879
+fc1's hash: 1516369375
+fc2's hash: 1419810764
+fc3's hash: 922151033
+fc4's hash: 922151033
+
+Process finished with exit code 0
