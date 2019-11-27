@@ -27,7 +27,16 @@ public class EnumTester {
             System.out.println(planet.name());
         }
         System.out.println(DayOfWeek.fromPolishName("Wtorek"));
-        System.out.println(DayOfWeek.fromPolishName("Podzienialek")); //TODO check this against GIT
+        //System.out.println(DayOfWeek.fromPolishName("Podzienialek"));
+        System.out.println(DayOfWeek.fromEnglishName("Monday"));
+        System.out.println(DayOfWeek.fromEnglishName("Saturday"));
+        System.out.println(DayOfWeek.isWeekend("MON"));
+        System.out.println(DayOfWeek.isWeekend("TUE"));
+        System.out.println(DayOfWeek.isWeekend("SUN"));
+        System.out.println(DayOfWeek.isWeekend("SAT"));
+        System.out.println(DayOfWeek.isWeekend("ST"));
+        System.out.println(DayOfWeek.getWeekendDays());
+        System.out.println(DayOfWeek.getWorkingDays());
 
     }
 }
