@@ -60,4 +60,13 @@ public class Card {
         }
         return null;
     }
+
+    @Override
+    public String toString() {
+        return "Card{" +
+                "cardNumber='" + cardNumber + '\'' +
+                ", bankName='" + bankName + '\'' +
+                ", accountNumber=" + accountNumber +
+                '}';
+    }
 }
