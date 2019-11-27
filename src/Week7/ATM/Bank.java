@@ -1,5 +1,7 @@
 package Week7.ATM;
 
+import Week7.ATM.accounts.Account;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -29,8 +31,10 @@ public class Bank {
     public String toString() {
         return "Bank{" +
                 "name='" + name + '\'' +
+                ", accounts=" + accounts +
                 '}';
     }
+
     public String getName() {
         return name;
     }

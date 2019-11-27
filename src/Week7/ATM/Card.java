@@ -1,7 +1,8 @@
 package Week7.ATM;
 
-import java.math.BigDecimal;
+import Week7.ATM.accounts.Account;
 
+import java.math.BigDecimal;
 
 public class Card {
     private String pin;
@@ -9,22 +10,22 @@ public class Card {
     private String bankName;
     private long accountNumber;
 
-    public Card(String cardNumber, String bankName, long accountnumber) {
+    public Card(String cardNumber, String bankName, long accountNumber) {
         this.cardNumber = cardNumber;
         this.bankName = bankName;
-        this.accountNumber = accountnumber;
+        this.accountNumber = accountNumber;
         pin = "0000";
     }
 
-    public boolean checkPin(String enteredPin){
+    public boolean checkPin(String enteredPin) {
         return pin.equals(enteredPin);
     }
 
-    public void changePin(String oldPin, String newPin){
+    public void changePin(String oldPin, String newPin) {
         if (checkPin(oldPin)) {
             pin = newPin;
-        }  else {
-            System.out.println("Wrong PIN!");
+        } else {
+            System.out.println("Entered wrong pin code!");
         }
     }
 
@@ -55,7 +56,7 @@ public class Card {
     public BigDecimal withDraw(BigDecimal amount) {
         Account account = getCardAccount();
         if(account != null) {
-            return account.withdraw(amount);
+            return account.withDraw(amount);
         }
         return null;
     }

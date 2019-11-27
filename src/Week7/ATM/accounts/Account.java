@@ -1,26 +1,26 @@
-package Week7.ATM;
+package Week7.ATM.accounts;
+
+import Week7.ATM.Card;
 
 import java.math.BigDecimal;
 import java.util.Objects;
 
 public abstract class Account {
-    private static long accountNoCounter = 0;
-    private Card accountCard;
+    private static long accountNumberCounter = 0;
 
     private Long accountNumber;
-    private BigDecimal balance;
+    protected BigDecimal balance;
 
+    public Account() {
+        accountNumber = accountNumberCounter + 1;
+        accountNumberCounter++;
+
+        balance = BigDecimal.ZERO;
+    }
 
     public abstract BigDecimal topUp(BigDecimal amount);
-    public abstract BigDecimal withdraw(BigDecimal amount);
 
-    public Account(Card card) {
-        accountNumber = accountNoCounter + 1;
-        accountNoCounter++;
-        balance = BigDecimal.ZERO;
-        accountCard = card;
-
-    }
+    public abstract BigDecimal withDraw(BigDecimal amount);
 
     public Long getAccountNumber() {
         return accountNumber;
@@ -28,6 +28,14 @@ public abstract class Account {
 
     public BigDecimal getBalance() {
         return balance;
+    }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "accountNumber=" + accountNumber +
+                ", balance=" + balance +
+                '}';
     }
 
     @Override

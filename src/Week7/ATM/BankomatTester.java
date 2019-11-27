@@ -1,5 +1,12 @@
 package Week7.ATM;
 
+
+import Week7.ATM.accounts.Account;
+import Week7.ATM.accounts.CreditAccount;
+import Week7.ATM.accounts.DebitAccount;
+
+import java.math.BigDecimal;
+
 public class BankomatTester {
 
     public static void main(String[] args) {
@@ -8,27 +15,27 @@ public class BankomatTester {
 
         BankRegistry.registerBank(bank1);
         BankRegistry.registerBank(bank2);
-        System.out.println(BankRegistry.getByName("Mbank"));
-        System.out.println(BankRegistry.getByName("Pekao"));
-        System.out.println(BankRegistry.getByName("MBank"));
 
-        Account account1 = new DebitAccount(new Card("001","Mbank", 1));
-        Account account2 = new DebitAccount(new Card("002","Pekao", 2));
-        Account account3 = new DebitAccount(new Card("003", "Pekao",3));
-        bank1.addAccount(account1);
-        bank1.addAccount(account2);
-        bank2.addAccount(account3);
+        Account debitAccount = new DebitAccount();
+        Account creditAccount = new CreditAccount(BigDecimal.valueOf(1000));
+        bank1.addAccount(debitAccount);
+        bank1.addAccount(creditAccount);
 
+        System.out.println(debitAccount.getAccountNumber());
+        System.out.println(creditAccount.getAccountNumber());
 
-        System.out.println(account1.getAccountNumber());
-        System.out.println(account2.getAccountNumber());
+        Card debitCard = new Card("123", bank1.getName(), debitAccount.getAccountNumber());
+        Card creditCard = new Card("234", bank1.getName(), creditAccount.getAccountNumber());
 
-
-        ATM atm1 = new ATMWithdrawal("ATM1");
-        atm1.insertCard();
-        atm1.insertCard();
-        atm1.endSession();
-        atm1.insertCard();
+        //create accounts
+        //create banks
+        //create cards. put account numbers into cards
+        //put bank names into cards
+        //register accounts in banks
+        //register banks in bank registrator
+        //
+        //create different ATMs (bankomat, wplatomat, bankomat+wplatomat)
+        // try to top-up, withdraw different cards with different bankomats
 
     }
 
