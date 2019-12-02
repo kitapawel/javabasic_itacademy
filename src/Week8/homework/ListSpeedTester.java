@@ -21,7 +21,7 @@ public class ListSpeedTester {
 
         arrayListExecutionStartTime = currentTimeMillis();
         System.out.println("Starting array list addition at: " + arrayListExecutionStartTime);
-        for (int i = 0; i < 300000; i++){
+        for (int i = 0; i < 100000; i++){
             intArrayList.add(i);
         }
         arrayListExecutionEndTime = currentTimeMillis();
@@ -32,7 +32,7 @@ public class ListSpeedTester {
 
         linkedListExecutionStartTime = currentTimeMillis();
         System.out.println("Starting linked list addition at: "+ linkedListExecutionStartTime);
-        for (int i = 0; i < 300000; i++){
+        for (int i = 0; i < 100000; i++){
             intLinkedList.add(i);
         }
         linkedListExecutionEndTime = currentTimeMillis();
