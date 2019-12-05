@@ -1,9 +1,9 @@
-package Week9.homework;
+package Week9.homework.generics;
 
-public abstract class Book {
+public class Toy {
     private String name;
 
-    public Book (String name){
+    public Toy (String name){
         this.name = name;
     }
 
@@ -11,4 +11,5 @@ public abstract class Book {
     public String toString() {
         return name;
     }
+
 }

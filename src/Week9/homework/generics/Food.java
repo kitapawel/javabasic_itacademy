@@ -1,4 +1,4 @@
-package Week9.homework;
+package Week9.homework.generics;
 
 public class Food {
     private String name;

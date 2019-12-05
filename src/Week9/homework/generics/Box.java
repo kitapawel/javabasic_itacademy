@@ -1,4 +1,4 @@
-package Week9.homework;
+package Week9.homework.generics;
 
 import java.util.ArrayList;
 
@@ -16,15 +16,8 @@ public class Box<T> {
         items.add(item);
     }
 
-    public T getItemsFromBox(){
-        for (T item : items) {
-            return item;
-        }
-        return null;
-    }
-
     @Override
     public String toString() {
-        return name + " contains " + items.toString();
+        return name + " contains " + items;
     }
 }

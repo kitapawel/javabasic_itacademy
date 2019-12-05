@@ -1,4 +1,4 @@
-package Week9.homework;
+package Week9.homework.generics;
 
 public class GenericsTester {
 
@@ -36,16 +36,19 @@ public class GenericsTester {
         toyBox.addItemToBox(soldier);
         System.out.println(toyBox);
 
-        UniversalShelf universalShelf = new UniversalShelf<>("Universal Shelf");
+
+
+        //Shelf bookShelf = new Shelf("Book Shelf");
+        //bookShelf.addBoxToShelf(toyBox);
+        //bookShelf.addBoxToShelf(bookBox);
+        //System.out.println(bookShelf);
+
+        UniversalShelf universalShelf = new UniversalShelf("Universal Shelf");
         universalShelf.addBoxToShelf(toyBox);
         universalShelf.addBoxToShelf(bookBox);
         universalShelf.addBoxToShelf(foodBox);
         System.out.println(universalShelf);
 
-        BookShelf bookShelf = new BookShelf("Book Shelf");
-        bookShelf.addBoxToShelf(toyBox);
-        bookShelf.addBoxToShelf(bookBox);
-        System.out.println(bookShelf);
     }
 
 
