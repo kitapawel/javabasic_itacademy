@@ -38,10 +38,11 @@ public class GenericsTester {
 
 
 
-        //Shelf bookShelf = new Shelf("Book Shelf");
+        Shelf<Book> bookShelf = new Shelf("Book Shelf");
         //bookShelf.addBoxToShelf(toyBox);
-        //bookShelf.addBoxToShelf(bookBox);
-        //System.out.println(bookShelf);
+        bookShelf.addBoxToShelf(bookBox);
+        //bookShelf.addBoxToShelf(foodBox);
+        System.out.println(bookShelf);
 
         UniversalShelf universalShelf = new UniversalShelf("Universal Shelf");
         universalShelf.addBoxToShelf(toyBox);

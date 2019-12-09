@@ -1,6 +1,7 @@
 package Week9.homework.generics;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class UniversalShelf {
 
@@ -10,15 +11,14 @@ public class UniversalShelf {
         this.name = name;
     }
 
-    ArrayList items = new ArrayList<>();
+    private List<Box<?>> boxes = new ArrayList<>();
 
     public void addBoxToShelf(Box item){
-        items.add(item);
+        boxes.add(item);
     }
 
     @Override
     public String toString() {
-        return name + " contains " + items;
+        return name + " contains " + boxes;
     }
-
 }
