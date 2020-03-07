@@ -1,2 +1,2 @@
 # javabasic_itacademy
-Projects from ITAcademy basic java course
+Projects and lesson files/examples written during the ITAcademy java course
